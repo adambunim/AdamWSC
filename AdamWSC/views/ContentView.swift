@@ -4,15 +4,24 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var matches: [Match] = []
+    @State var result: Result<[Match],WSCError>? = nil
     
     var body: some View {
-        List(matches) {
-            MatchCell(match: $0)
+        VStack {
+            switch result {
+            case .success(let matches):
+                List(matches) {
+                    MatchCell(match: $0)
+                }
+            case .failure(let error):
+                Text(error.localizedDescription)
+            case .none:
+                ProgressView()
+            }
         }
         .padding()
         .onAppear {
-            matches = []
+            result = MatchesLoader.load()
         }
     }
     
