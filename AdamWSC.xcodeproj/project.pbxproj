@@ -14,6 +14,8 @@
 		51D5E9082AC3527B00CFE7CB /* AdamWSCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9072AC3527B00CFE7CB /* AdamWSCTests.swift */; };
 		51D5E9122AC3527B00CFE7CB /* AdamWSCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9112AC3527B00CFE7CB /* AdamWSCUITests.swift */; };
 		51D5E9142AC3527B00CFE7CB /* AdamWSCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9132AC3527B00CFE7CB /* AdamWSCUITestsLaunchTests.swift */; };
+		51D5E9212AC3534900CFE7CB /* matchs.json in Resources */ = {isa = PBXBuildFile; fileRef = 51D5E9202AC3534800CFE7CB /* matchs.json */; };
+		51D5E9232AC3538D00CFE7CB /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9222AC3538D00CFE7CB /* Matches.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		51D5E90D2AC3527B00CFE7CB /* AdamWSCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdamWSCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D5E9112AC3527B00CFE7CB /* AdamWSCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdamWSCUITests.swift; sourceTree = "<group>"; };
 		51D5E9132AC3527B00CFE7CB /* AdamWSCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdamWSCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51D5E9202AC3534800CFE7CB /* matchs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = matchs.json; sourceTree = "<group>"; };
+		51D5E9222AC3538D00CFE7CB /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,10 @@
 			children = (
 				51D5E8F62AC3527A00CFE7CB /* AdamWSCApp.swift */,
 				51D5E8F82AC3527A00CFE7CB /* ContentView.swift */,
+				51D5E9202AC3534800CFE7CB /* matchs.json */,
 				51D5E8FA2AC3527B00CFE7CB /* Assets.xcassets */,
 				51D5E8FC2AC3527B00CFE7CB /* Preview Content */,
+				51D5E9222AC3538D00CFE7CB /* Matches.swift */,
 			);
 			path = AdamWSC;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D5E9212AC3534900CFE7CB /* matchs.json in Resources */,
 				51D5E8FE2AC3527B00CFE7CB /* Preview Assets.xcassets in Resources */,
 				51D5E8FB2AC3527B00CFE7CB /* Assets.xcassets in Resources */,
 			);
@@ -258,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D5E8F92AC3527A00CFE7CB /* ContentView.swift in Sources */,
+				51D5E9232AC3538D00CFE7CB /* Matches.swift in Sources */,
 				51D5E8F72AC3527A00CFE7CB /* AdamWSCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +437,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

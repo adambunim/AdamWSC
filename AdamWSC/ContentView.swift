@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  AdamWSC
-//
-//  Created by Adam Bunim on 26/09/2023.
-//
+
 
 import SwiftUI
 
@@ -17,8 +12,4 @@ struct ContentView: View {
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
