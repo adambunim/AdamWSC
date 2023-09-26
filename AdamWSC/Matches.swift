@@ -51,7 +51,7 @@ struct League: Decodable {
 
 struct Fixture: Decodable {
     var venue: Venue? = nil
-    var date: Int? = nil
+    var date: String? = nil
     var referee: String? = nil
     var status: Status? = nil
     var id: Int? = nil
