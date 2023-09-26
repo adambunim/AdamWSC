@@ -10,7 +10,7 @@ struct ContentView: View {
         VStack {
             switch result {
             case .success(let matches):
-                List(matches) {
+                List(matches, id: \.WSCGameId) {
                     MatchCell(match: $0)
                 }
             case .failure:
@@ -19,7 +19,6 @@ struct ContentView: View {
                 ProgressView()
             }
         }
-        .padding()
         .onAppear {
             result = MatchesLoader.load()
         }
