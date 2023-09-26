@@ -13,8 +13,8 @@ struct ContentView: View {
                 List(matches) {
                     MatchCell(match: $0)
                 }
-            case .failure(let error):
-                Text(error.localizedDescription)
+            case .failure:
+                Text(.failed_to_load_matches)
             case .none:
                 ProgressView()
             }

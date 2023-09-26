@@ -21,6 +21,8 @@
 		51D5E92B2AC35DB900CFE7CB /* WSCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E92A2AC35DB900CFE7CB /* WSCError.swift */; };
 		51D5E9302AC3606A00CFE7CB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51D5E9322AC3606A00CFE7CB /* Localizable.strings */; };
 		51D5E9352AC361D000CFE7CB /* StringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9342AC361D000CFE7CB /* StringKey.swift */; };
+		51D5E9382AC3661C00CFE7CB /* TextExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9372AC3661C00CFE7CB /* TextExt.swift */; };
+		51D5E93A2AC3663300CFE7CB /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9392AC3663300CFE7CB /* StringExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		51D5E9312AC3606A00CFE7CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		51D5E9332AC3606D00CFE7CB /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		51D5E9342AC361D000CFE7CB /* StringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringKey.swift; sourceTree = "<group>"; };
+		51D5E9372AC3661C00CFE7CB /* TextExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExt.swift; sourceTree = "<group>"; };
+		51D5E9392AC3663300CFE7CB /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				51D5E9342AC361D000CFE7CB /* StringKey.swift */,
+				51D5E9372AC3661C00CFE7CB /* TextExt.swift */,
+				51D5E9392AC3663300CFE7CB /* StringExt.swift */,
 			);
 			path = texts;
 			sourceTree = "<group>";
@@ -310,8 +316,10 @@
 				51D5E8F92AC3527A00CFE7CB /* ContentView.swift in Sources */,
 				51D5E9232AC3538D00CFE7CB /* Matches.swift in Sources */,
 				51D5E8F72AC3527A00CFE7CB /* AdamWSCApp.swift in Sources */,
+				51D5E93A2AC3663300CFE7CB /* StringExt.swift in Sources */,
 				51D5E9262AC35B2900CFE7CB /* MatchCell.swift in Sources */,
 				51D5E9292AC35C7000CFE7CB /* MatchesLoader.swift in Sources */,
+				51D5E9382AC3661C00CFE7CB /* TextExt.swift in Sources */,
 				51D5E9352AC361D000CFE7CB /* StringKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,7 @@ class MatchesLoader {
     
     static func load() -> Result<[Match],WSCError> {
         guard let url = Bundle.main.url(forResource: "matches", withExtension: "json") else {
-            return .failure(.runtime(.failed_to_load_matches))
+            return .failure(.load)
         }
         do {
             let data = try Data(contentsOf: url)
@@ -14,7 +14,7 @@ class MatchesLoader {
             return .success(matches.response)
         }
         catch {
-            return .failure(.runtime(.failed_to_load_matches))
+            return .failure(.load)
         }
     }
     
