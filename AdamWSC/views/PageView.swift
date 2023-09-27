@@ -1,12 +1,21 @@
 
 import SwiftUI
+import AVKit
 
 struct PageView: View {
     
     let page: Page
     
     var body: some View {
-        Text("Hello, World!")
+        if let videoUrl = page.videoUrl {
+            if let url = URL(string: videoUrl) {
+                VideoPlayer(player: AVPlayer(url:  url))
+                    .frame(height: 400)
+            }
+        }
+        else {
+            Text(.failed_to_load)
+        }
     }
 }
 

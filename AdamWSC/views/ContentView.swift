@@ -33,7 +33,7 @@ struct ContentView: View {
                     }
                 }
             case .failure:
-                Text(.failed_to_load_matches)
+                Text(.failed_to_load)
             case .none:
                 ScrollView {
                     LazyVStack {
