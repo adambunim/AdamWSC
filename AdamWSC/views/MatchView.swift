@@ -39,6 +39,7 @@ struct MatchView: View {
                         loadVideos(pages)
                     }
                     .onAppear {
+                        players[0] = firstPlayer
                         loadVideos(pages)
                     }
                 }
