@@ -19,13 +19,16 @@ struct MatchView: View {
             .background(.gray.opacity(0.2))
             
             if let pages = match.wscGame?.primeStory?.pages {
-                ScrollView {
-                    LazyVStack {
-                        ForEach(pages) {
-                            PageView(page: $0)
-                        }
+                TabView {
+                    ForEach(pages) {
+                        PageView(page: $0)
                     }
                 }
+                .tabViewStyle(.page)
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
+            }
+            else {
+                Text(.nothing_to_show)
             }
             
             Spacer()
