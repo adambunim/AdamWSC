@@ -97,9 +97,10 @@ struct PrimeStory: Decodable {
     var name: String? = nil
 }
 
-struct Page: Decodable {
+struct Page: Decodable, Identifiable {
+    var id: String { paggeId }
     var duration: Int? = nil
-    var paggeId: String? = nil
+    var paggeId: String
     var videoUrl: String? = nil
     var title: String? = nil
     var awayScore: Int? = nil

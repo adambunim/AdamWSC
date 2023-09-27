@@ -6,7 +6,28 @@ struct MatchView: View {
     let match: Match
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        let title  = match.wscGame?.homeTeamName
+        VStack(spacing: 20) {
+            HStack {
+                Spacer()
+                Text(.games)
+                    .font(.headline)
+                Spacer()
+            }
+            .padding()
+            .background(.gray.opacity(0.2))
+            
+            if let pages = match.wscGame?.primeStory?.pages {
+                ScrollView {
+                    LazyVStack {
+                        ForEach(pages) {
+                            PageView(page: $0)
+                        }
+                    }
+                }
+            }
+            
+        }
     }
 }
 
