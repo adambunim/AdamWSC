@@ -5,6 +5,7 @@ import AVKit
 struct MatchView: View {
     
     let match: Match
+    let firstPlayer: AVPlayer?
     @State var players: [Int:AVPlayer] = [:]
     @State var selectedTab: Int = 0
     
