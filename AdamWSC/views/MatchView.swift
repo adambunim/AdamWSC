@@ -6,11 +6,12 @@ struct MatchView: View {
     let match: Match
     
     var body: some View {
-        let title  = match.wscGame?.homeTeamName
+        let homeName = match.wscGame?.homeTeamName ?? "?"
+        let awayName = match.wscGame?.awayTeamName ?? "?"
         VStack(spacing: 20) {
             HStack {
                 Spacer()
-                Text(.games)
+                Text("\(homeName) - \(awayName)")
                     .font(.headline)
                 Spacer()
             }
@@ -27,6 +28,7 @@ struct MatchView: View {
                 }
             }
             
+            Spacer()
         }
     }
 }
