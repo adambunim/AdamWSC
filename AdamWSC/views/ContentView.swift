@@ -29,7 +29,13 @@ struct ContentView: View {
             case .failure:
                 Text(.failed_to_load_matches)
             case .none:
-                ProgressView()
+                ScrollView {
+                    LazyVStack {
+                        ForEach(0..<3) { _ in 
+                            LoadCell()
+                        }
+                    }
+                }
             }
             Spacer()
         }

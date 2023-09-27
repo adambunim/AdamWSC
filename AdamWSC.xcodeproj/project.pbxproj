@@ -23,6 +23,7 @@
 		51D5E9352AC361D000CFE7CB /* StringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9342AC361D000CFE7CB /* StringKey.swift */; };
 		51D5E9382AC3661C00CFE7CB /* TextExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9372AC3661C00CFE7CB /* TextExt.swift */; };
 		51D5E93A2AC3663300CFE7CB /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9392AC3663300CFE7CB /* StringExt.swift */; };
+		51D5E93C2AC4001300CFE7CB /* LoadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E93B2AC4001300CFE7CB /* LoadCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		51D5E9342AC361D000CFE7CB /* StringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringKey.swift; sourceTree = "<group>"; };
 		51D5E9372AC3661C00CFE7CB /* TextExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExt.swift; sourceTree = "<group>"; };
 		51D5E9392AC3663300CFE7CB /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		51D5E93B2AC4001300CFE7CB /* LoadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				51D5E8F82AC3527A00CFE7CB /* ContentView.swift */,
 				51D5E9252AC35B2900CFE7CB /* MatchCell.swift */,
+				51D5E93B2AC4001300CFE7CB /* LoadCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				51D5E92B2AC35DB900CFE7CB /* WSCError.swift in Sources */,
 				51D5E8F92AC3527A00CFE7CB /* ContentView.swift in Sources */,
 				51D5E9232AC3538D00CFE7CB /* Matches.swift in Sources */,
+				51D5E93C2AC4001300CFE7CB /* LoadCell.swift in Sources */,
 				51D5E8F72AC3527A00CFE7CB /* AdamWSCApp.swift in Sources */,
 				51D5E93A2AC3663300CFE7CB /* StringExt.swift in Sources */,
 				51D5E9262AC35B2900CFE7CB /* MatchCell.swift in Sources */,

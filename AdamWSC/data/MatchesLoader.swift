@@ -8,7 +8,7 @@ class MatchesLoader {
             completion(.failure(.load))
             return
         }
-        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 1.0) {
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 2.0) { // simulate server call
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
