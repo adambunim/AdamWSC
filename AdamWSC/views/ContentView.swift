@@ -5,8 +5,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var result: Result<[Match],WSCError>? = nil
-    @State var selectedMatch: Match? = nil
-    
+
     var body: some View {
         VStack(spacing: 20) {
             HStack {
@@ -20,18 +19,7 @@ struct ContentView: View {
             
             switch result {
             case .success(let matches):
-                ScrollView {
-                    LazyVStack {
-                        ForEach(matches) { iter in
-                            MatchCellButton(match: iter, onPress: {
-                                selectedMatch = iter
-                            })
-                        }
-                        .sheet(item: $selectedMatch) { match in
-                            MatchView(match: match)
-                        }
-                    }
-                }
+                MatchList(matches: matches)
             case .failure:
                 Text(.failed_to_load)
             case .none:

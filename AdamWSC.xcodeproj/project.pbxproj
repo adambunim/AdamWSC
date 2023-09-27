@@ -10,6 +10,7 @@
 		515B9D4B2AC41CD800FAE8C3 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515B9D4A2AC41CD800FAE8C3 /* MatchView.swift */; };
 		515B9D4D2AC41D2C00FAE8C3 /* ExampleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515B9D4C2AC41D2C00FAE8C3 /* ExampleLoader.swift */; };
 		515B9D4F2AC420BA00FAE8C3 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515B9D4E2AC420BA00FAE8C3 /* PageView.swift */; };
+		515B9D512AC4485500FAE8C3 /* MatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515B9D502AC4485500FAE8C3 /* MatchList.swift */; };
 		51D5E8F72AC3527A00CFE7CB /* AdamWSCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E8F62AC3527A00CFE7CB /* AdamWSCApp.swift */; };
 		51D5E8F92AC3527A00CFE7CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E8F82AC3527A00CFE7CB /* ContentView.swift */; };
 		51D5E8FB2AC3527B00CFE7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D5E8FA2AC3527B00CFE7CB /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		515B9D4A2AC41CD800FAE8C3 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		515B9D4C2AC41D2C00FAE8C3 /* ExampleLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleLoader.swift; sourceTree = "<group>"; };
 		515B9D4E2AC420BA00FAE8C3 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		515B9D502AC4485500FAE8C3 /* MatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchList.swift; sourceTree = "<group>"; };
 		51D5E8F32AC3527A00CFE7CB /* AdamWSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdamWSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D5E8F62AC3527A00CFE7CB /* AdamWSCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdamWSCApp.swift; sourceTree = "<group>"; };
 		51D5E8F82AC3527A00CFE7CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				51D5E9432AC4193E00CFE7CB /* MatchCellButton.swift */,
 				515B9D4A2AC41CD800FAE8C3 /* MatchView.swift */,
 				515B9D4E2AC420BA00FAE8C3 /* PageView.swift */,
+				515B9D502AC4485500FAE8C3 /* MatchList.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				51D5E93A2AC3663300CFE7CB /* StringExt.swift in Sources */,
 				51D5E9262AC35B2900CFE7CB /* MatchCell.swift in Sources */,
 				51D5E9292AC35C7000CFE7CB /* MatchesLoader.swift in Sources */,
+				515B9D512AC4485500FAE8C3 /* MatchList.swift in Sources */,
 				51D5E9382AC3661C00CFE7CB /* TextExt.swift in Sources */,
 				515B9D4B2AC41CD800FAE8C3 /* MatchView.swift in Sources */,
 				51D5E9352AC361D000CFE7CB /* StringKey.swift in Sources */,
