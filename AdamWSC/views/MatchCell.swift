@@ -1,9 +1,12 @@
 
 import SwiftUI
+import AVKit
 
 struct MatchCell: View {
     
     let match: Match
+    //create a player for the first page so it will open quickly when pressed
+    @State var player: AVPlayer? = nil
     
     var body: some View {
         let lastPage: Page? = match.wscGame?.primeStory?.pages.last
@@ -45,8 +48,23 @@ struct MatchCell: View {
         .padding(.top, 3)
         .padding(.bottom, 3)
         .padding([.leading, .trailing])
+        .onAppear {
+            loadFirstVideo()
+        }
     }
     
+    func loadFirstVideo() {
+        guard let firstPage = match.wscGame?.primeStory?.pages.first else {
+            return
+        }
+        guard let videoUrl = firstPage.videoUrl else {
+            return
+        }
+        guard let url = URL(string: videoUrl) else {
+            return
+        }
+        player = AVPlayer(url:  url)
+    }
     
 }
 
