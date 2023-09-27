@@ -122,7 +122,6 @@
 				51D5E9362AC3620600CFE7CB /* texts */,
 				51D5E8FA2AC3527B00CFE7CB /* Assets.xcassets */,
 				51D5E8FC2AC3527B00CFE7CB /* Preview Content */,
-				51D5E9222AC3538D00CFE7CB /* Matches.swift */,
 				51D5E92A2AC35DB900CFE7CB /* WSCError.swift */,
 			);
 			path = AdamWSC;
@@ -168,6 +167,7 @@
 			children = (
 				51D5E9202AC3534800CFE7CB /* matches.json */,
 				51D5E9282AC35C7000CFE7CB /* MatchesLoader.swift */,
+				51D5E9222AC3538D00CFE7CB /* Matches.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";

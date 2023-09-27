@@ -12,6 +12,7 @@ struct Match: Decodable {
     var goals: Goals? = nil
     var league: League? = nil
     var fixture: Fixture? = nil
+    var wscGame: WscGame? = nil
 }
 
 struct Score: Decodable {
@@ -74,4 +75,37 @@ struct Venue: Decodable {
     var name: String? = nil
     var city: String? = nil
     var id: Int? = nil
+}
+
+struct WscGame: Decodable {
+    var awayTeamName: String? = nil
+    var primeStory: PrimeStory? = nil
+    var name: String? = nil
+    var gameId: String? = nil
+    var homeTeamName: String? = nil
+    var gameTime: String? = nil
+}
+
+struct PrimeStory: Decodable {
+    var title: String? = nil
+    var storyThumbnailSquare: String? = nil
+    var publishDate: String? = nil
+    var storyThumbnail: String? = nil
+    var storyId: String? = nil
+    var pages: [Page]
+    var name: String? = nil
+}
+
+struct Page: Decodable {
+    var duration: Int? = nil
+    var paggeId: String? = nil
+    var videoUrl: String? = nil
+    var title: String? = nil
+    var awayScore: Int? = nil
+    var eventType: String? = nil
+    var gameClock: String? = nil
+    var homeScore: Int? = nil
+    var rating: Int? = nil
+    var period: String? = nil
+    var actionType: String? = nil
 }
