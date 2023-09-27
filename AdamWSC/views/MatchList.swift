@@ -18,6 +18,9 @@ struct MatchList: View {
                     .onAppear {
                         loadVideo(iter)
                     }
+                    .onDisappear {
+                        players[iter.id] = nil
+                    }
                 }
                 .sheet(item: $selectedMatch) { match in
                     MatchView(match: match, firstPlayer: players[match.id])
