@@ -5,16 +5,29 @@ import AVKit
 struct PageView: View {
     
     let page: Page
+    @State var player: AVPlayer? = nil
     
     var body: some View {
-        if let videoUrl = page.videoUrl {
-            if let url = URL(string: videoUrl) {
-                VideoPlayer(player: AVPlayer(url:  url))
-                    .frame(height: 400)
+        VStack {
+            if let player {
+                VideoPlayer(player: player)
+            }
+            else {
+                Text(.failed_to_load)
             }
         }
-        else {
-            Text(.failed_to_load)
+        .onAppear {
+            guard let videoUrl = page.videoUrl else {
+                return
+            }
+            guard let url = URL(string: videoUrl) else {
+                return
+            }
+            player = AVPlayer(url:  url)
+            player?.play()
+        }
+        .onDisappear {
+            player?.pause()
         }
     }
 }
