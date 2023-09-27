@@ -5,8 +5,9 @@ struct Matches: Decodable {
     var response: [Match]
 }
 
-struct Match: Decodable {
-    var WSCGameId: String? = nil
+struct Match: Decodable, Identifiable {
+    var id: String { WSCGameId }
+    var WSCGameId: String
     var score: Score? = nil
     var teams: Teams? = nil
     var goals: Goals? = nil
