@@ -7,25 +7,39 @@ struct MatchCell: View {
     
     var body: some View {
         let lastPage: Page? = match.wscGame?.primeStory?.pages.last
-        let homeScore = "\(lastPage?.homeScore ?? 0)"
-        let awayScore = "\(lastPage?.awayScore ?? 0)"
-        VStack {
-            HStack {
-                Text(match.wscGame?.homeTeamName ?? "?")
-                Text("-")
-                Text(match.wscGame?.awayTeamName ?? "?")
+        ZStack {
+            if let background = match.league?.logo {
+                AsyncImage(
+                    url: URL(string: background),
+                    content: { image in
+                        image
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 100, height: 100)
+                            .opacity(0.1)
+                    },
+                    placeholder: {
+                        EmptyView()
+                    }
+                )
             }
-            .font(.title2)
             
             HStack {
-                Text(homeScore)
+                TeamScoreView(
+                    logo: match.teams?.home?.logo,
+                    name: match.wscGame?.homeTeamName,
+                    score: lastPage?.homeScore)
+                Spacer()
                 Text("-")
-                Text(awayScore)
+                Spacer()
+                TeamScoreView(
+                    logo: match.teams?.away?.logo,
+                    name: match.wscGame?.awayTeamName,
+                    score: lastPage?.awayScore)
             }
-            .font(.headline)
         }
         .padding()
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, minHeight: 200)
         .background(.gray.opacity(0.2))
         .cornerRadius(20)
         .padding(.top, 3)
@@ -48,5 +62,34 @@ struct MatchCell: View {
     }
     catch {
         return Text(error.localizedDescription)
+    }
+}
+
+private struct TeamScoreView: View {
+    
+    let logo: String?
+    let name: String?
+    let score: Int?
+    
+    var body: some View {
+        VStack {
+            if let logo {
+                AsyncImage(
+                    url: URL(string: logo),
+                    content: { image in
+                        image
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30)
+                    },
+                    placeholder: {
+                        EmptyView()
+                    })
+            }
+            Text(name ?? "?")
+                .font(.title2)
+            Text("\(score ?? 0)")
+                .font(.headline)
+        }
     }
 }
