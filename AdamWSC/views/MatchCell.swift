@@ -6,8 +6,31 @@ struct MatchCell: View {
     let match: Match
     
     var body: some View {
-        Text(match.WSCGameId ?? "")
+        let name = match.wscGame?.name
+        let lastPage: Page? = match.wscGame?.primeStory?.pages.last
+        let homeScore = "\(lastPage?.homeScore ?? 0)"
+        let awayScore = "\(lastPage?.awayScore ?? 0)"
+        VStack {
+            Text(name ?? "?")
+                .font(.title)
+            
+            HStack {
+                Text(homeScore)
+                Text("-")
+                Text(awayScore)
+            }
+            .font(.headline)
+        }
+        .padding()
+        .frame(maxWidth: .infinity)
+        .background(.gray.opacity(0.2))
+        .cornerRadius(20)
+        .padding(.top, 3)
+        .padding(.bottom, 3)
+        .padding([.leading, .trailing])
     }
+    
+    
 }
 
 #Preview {
