@@ -20,7 +20,9 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            result = MatchesLoader.load()
+            MatchesLoader.load() { res in
+                result = res
+            }
         }
     }
     
