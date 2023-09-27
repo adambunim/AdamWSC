@@ -13,8 +13,11 @@ class MatchesLoader {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
                 let matches = try decoder.decode(Matches.self, from: data)
+                let filter = matches.response.filter {
+                    $0.wscGame != nil
+                }
                 DispatchQueue.main.async {
-                    completion(.success(matches.response))
+                    completion(.success(filter))
                 }
             }
             catch {
