@@ -8,10 +8,14 @@ struct MatchList: View {
     @State var selectedMatch: Match? = nil
     @State var players: [String:AVPlayer] = [:]
     
+    @State private var scrollID: Int?
+    let bgColors: [Color] = [ .yellow, .blue, .orange, .indigo, .green ]
+    
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(matches) { iter in
+                ForEach(0..<matches.count, id:\.self) { i in
+                    let iter = matches[i]
                     MatchCellButton(match: iter) {
                         selectedMatch = iter
                     }
@@ -26,6 +30,12 @@ struct MatchList: View {
                     MatchView(match: match, firstPlayer: players[match.id])
                 }
             }
+            .scrollTargetLayout()
+        }
+        .scrollTargetBehavior(.paging)
+        .scrollPosition(id: $scrollID)
+        .onChange(of: scrollID) { oldValue, newValue in
+            print(newValue ?? "")
         }
     }
     
@@ -43,7 +53,6 @@ struct MatchList: View {
         guard let url = URL(string: videoUrl) else {
             return
         }
-        print("loaded \(id)")
         players[id] = AVPlayer(url:  url)
     }
 }
