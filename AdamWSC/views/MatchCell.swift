@@ -51,18 +51,10 @@ struct MatchCell: View {
 }
 
 #Preview {
-    guard let url = Bundle.main.url(forResource: "example", withExtension: "json") else {
-        return Text("no file")
+    guard let match = ExampleLoader.load() else {
+        return Text("failed to load")
     }
-    do {
-        let data = try Data(contentsOf: url)
-        let decoder = JSONDecoder()
-        let match = try decoder.decode(Match.self, from: data)
-        return MatchCell(match: match)
-    }
-    catch {
-        return Text(error.localizedDescription)
-    }
+    return MatchCell(match: match)
 }
 
 private struct TeamScoreView: View {

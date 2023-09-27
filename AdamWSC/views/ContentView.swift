@@ -28,7 +28,7 @@ struct ContentView: View {
                             })
                         }
                         .sheet(item: $selectedMatch) { match in
-                            Text(match.id)
+                            MatchView(match: match)
                         }
                     }
                 }
