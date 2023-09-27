@@ -36,7 +36,7 @@ struct MatchView: View {
                     .frame(width: proxy.size.height, height: proxy.size.width)
                     .rotationEffect(.degrees(90), anchor: .topLeading)
                     .offset(x: proxy.size.width)
-                    .onChange(of: selectedTab) {
+                    .onChange(of: selectedTab) { tab in
                         loadVideos(pages)
                     }
                     .onAppear {
