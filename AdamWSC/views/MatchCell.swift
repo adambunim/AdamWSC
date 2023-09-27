@@ -6,13 +6,16 @@ struct MatchCell: View {
     let match: Match
     
     var body: some View {
-        let name = match.wscGame?.name
         let lastPage: Page? = match.wscGame?.primeStory?.pages.last
         let homeScore = "\(lastPage?.homeScore ?? 0)"
         let awayScore = "\(lastPage?.awayScore ?? 0)"
         VStack {
-            Text(name ?? "?")
-                .font(.title)
+            HStack {
+                Text(match.wscGame?.homeTeamName ?? "?")
+                Text("-")
+                Text(match.wscGame?.awayTeamName ?? "?")
+            }
+            .font(.title2)
             
             HStack {
                 Text(homeScore)
