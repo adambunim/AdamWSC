@@ -20,8 +20,10 @@ struct ContentView: View {
             switch result {
             case .success(let matches):
                 ScrollView {
-                    ForEach(matches, id: \.WSCGameId) {
-                        MatchCell(match: $0)
+                    LazyVStack {
+                        ForEach(matches, id: \.WSCGameId) {
+                            MatchCell(match: $0)
+                        }
                     }
                 }
             case .failure:
