@@ -8,6 +8,7 @@ struct MatchView: View {
     let firstPlayer: AVPlayer?
     @State var players: [Int:AVPlayer] = [:]
     @State var selectedTab: Int = 0
+    let preload = 2
     
     var body: some View {
         let homeName = match.wscGame?.homeTeamName ?? "?"
@@ -55,11 +56,24 @@ struct MatchView: View {
     }
     
     func loadVideos(_ pages: [Page]) {
-        loadVideoForPage(pages, selectedTab)
-        loadVideoForPage(pages, selectedTab + 1)
+        for i in 0..<pages.count {
+            if i < 0 || i > pages.count - 1 {
+                continue
+            }
+            
+            if i - selectedTab > preload || selectedTab - i > preload {
+                players[i] = nil
+            }
+            else {
+                loadVideoForPage(pages, i)
+            }
+        }
     }
     
     func loadVideoForPage(_ pages: [Page], _ i: Int) {
+        if i < 0 {
+            return
+        }
         if i > pages.count - 1 {
             return
         }
@@ -73,7 +87,6 @@ struct MatchView: View {
         guard let url = URL(string: videoUrl) else {
             return
         }
-        print("loaded \(i)")
         players[i] = AVPlayer(url:  url)
     }
     
