@@ -41,7 +41,7 @@ struct MatchCell: View {
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: 200)
-        .background(.gray.opacity(0.2))
+        .background(.blue.opacity(0.1))
         .cornerRadius(20)
         .padding(.top, 3)
         .padding(.bottom, 3)

@@ -7,7 +7,7 @@ struct ContentView: View {
     @State var result: Result<[Match],WSCError>? = nil
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 0) {
             HStack {
                 Spacer()
                 Text(.games)
@@ -31,7 +31,6 @@ struct ContentView: View {
                     }
                 }
             }
-            Spacer()
         }
         .onAppear {
             MatchesLoader.load() { res in
