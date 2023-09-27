@@ -24,6 +24,7 @@
 		51D5E9382AC3661C00CFE7CB /* TextExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9372AC3661C00CFE7CB /* TextExt.swift */; };
 		51D5E93A2AC3663300CFE7CB /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9392AC3663300CFE7CB /* StringExt.swift */; };
 		51D5E93C2AC4001300CFE7CB /* LoadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E93B2AC4001300CFE7CB /* LoadCell.swift */; };
+		51D5E9422AC40A5800CFE7CB /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 51D5E9412AC40A5800CFE7CB /* example.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		51D5E9372AC3661C00CFE7CB /* TextExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExt.swift; sourceTree = "<group>"; };
 		51D5E9392AC3663300CFE7CB /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		51D5E93B2AC4001300CFE7CB /* LoadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCell.swift; sourceTree = "<group>"; };
+		51D5E9412AC40A5800CFE7CB /* example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				51D5E9202AC3534800CFE7CB /* matches.json */,
 				51D5E9282AC35C7000CFE7CB /* MatchesLoader.swift */,
 				51D5E9222AC3538D00CFE7CB /* Matches.swift */,
+				51D5E9412AC40A5800CFE7CB /* example.json */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D5E9302AC3606A00CFE7CB /* Localizable.strings in Resources */,
+				51D5E9422AC40A5800CFE7CB /* example.json in Resources */,
 				51D5E9212AC3534900CFE7CB /* matches.json in Resources */,
 				51D5E8FE2AC3527B00CFE7CB /* Preview Assets.xcassets in Resources */,
 				51D5E8FB2AC3527B00CFE7CB /* Assets.xcassets in Resources */,
