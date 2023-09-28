@@ -5,8 +5,11 @@ import XCTest
 final class AdamWSCTests: XCTestCase {
 
     func testJsonParse() throws {
+        let start = Date()
         let matches = MatchesLoader.loadSync()
+        let delta: Double = Date().timeIntervalSince(start)
         XCTAssertEqual(matches?.count, 48)
+        XCTAssertLessThan(delta, 0.1)
     }
 
     func testSingleJsonParse() throws {
@@ -20,11 +23,4 @@ final class AdamWSCTests: XCTestCase {
         XCTAssertEqual(lastPage?.awayScore, 1)
     }
     
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
