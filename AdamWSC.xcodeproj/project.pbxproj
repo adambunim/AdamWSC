@@ -33,6 +33,8 @@
 		51DAC2932AC55BEC0073E212 /* LangView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DAC2922AC55BEC0073E212 /* LangView.swift */; };
 		51DAC2952AC5602F0073E212 /* MyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DAC2942AC5602F0073E212 /* MyText.swift */; };
 		51DAC2962AC562420073E212 /* MatchesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9282AC35C7000CFE7CB /* MatchesLoader.swift */; };
+		51DAC2972AC5639C0073E212 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9222AC3538D00CFE7CB /* Matches.swift */; };
+		51DAC2982AC563AD0073E212 /* WSCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E92A2AC35DB900CFE7CB /* WSCError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -365,7 +367,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51DAC2982AC563AD0073E212 /* WSCError.swift in Sources */,
 				51DAC2962AC562420073E212 /* MatchesLoader.swift in Sources */,
+				51DAC2972AC5639C0073E212 /* Matches.swift in Sources */,
 				51D5E9082AC3527B00CFE7CB /* AdamWSCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +597,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7QWJ9Y8H6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
@@ -612,6 +617,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7QWJ9Y8H6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
@@ -630,6 +636,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7QWJ9Y8H6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = adambunim.AdamWSCUITests;
@@ -647,6 +654,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7QWJ9Y8H6L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = adambunim.AdamWSCUITests;
