@@ -5,22 +5,22 @@ import AVKit
 struct MatchCell: View {
     
     let match: Match
+    let columns = [
+        GridItem(.fixed(40)),
+        GridItem(.flexible()),
+        GridItem(.fixed(40))
+    ]
     
     var body: some View {
         let lastPage: Page? = match.wscGame?.primeStory?.pages.last
-        HStack {
-            VStack(alignment: .leading) {
-                TeamScoreView(
-                    logo: match.teams?.home?.logo,
-                    name: match.wscGame?.homeTeamName,
-                    score: lastPage?.homeScore)
-                TeamScoreView(
-                    logo: match.teams?.away?.logo,
-                    name: match.wscGame?.awayTeamName,
-                    score: lastPage?.awayScore)
-                Spacer()
-            }
-            Spacer()
+        
+        LazyVGrid(columns: columns, spacing: 20) {
+            TeamLogo(team: match.teams?.home)
+            TeamNameView(team: match.teams?.home)
+            ScoreView(score: lastPage?.homeScore)
+            TeamLogo(team: match.teams?.away)
+            TeamNameView(team: match.teams?.away)
+            ScoreView(score: lastPage?.awayScore)
         }
         .environment(\.layoutDirection, .leftToRight)
         .padding()
@@ -40,34 +40,47 @@ struct MatchCell: View {
     return MatchCell(match: match)
 }
 
-private struct TeamScoreView: View {
+private struct TeamLogo: View {
     
-    let logo: String?
-    let name: String?
+    let team: Team?
+    
+    var body: some View {
+        if let logo = team?.logo {
+            AsyncImage(
+                url: URL(string: logo),
+                content: { image in
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxWidth: 30, maxHeight: 30)
+                        .clipShape(Circle())
+                },
+                placeholder: {
+                    Circle()
+                        .fill(Color.gray.opacity(0.3))
+                        .frame(width: 30, height: 30)
+                }
+            )
+        }
+    }
+}
+
+private struct TeamNameView: View {
+    
+    let team: Team?
+    
+    var body: some View {
+        Text(team?.name ?? "?")
+            .font(.title2)
+    }
+}
+
+private struct ScoreView: View {
+    
     let score: Int?
     
     var body: some View {
-        HStack {
-            if let logo {
-                AsyncImage(
-                    url: URL(string: logo),
-                    content: { image in
-                        image
-                            .resizable()
-                            .scaledToFit()
-                            .frame(maxWidth: 30, maxHeight: 30)
-                            .clipShape(Circle())
-                    },
-                    placeholder: {
-                        Circle()
-                            .fill(Color.gray.opacity(0.3))
-                            .frame(width: 30, height: 30)
-                    }
-                )
-            }
-            Text(name ?? "?")
-            Text("\(score ?? 0)")
-        }
-        .font(.title2)
+        Text("\(score ?? 0)")
+            .font(.title2)
     }
 }
