@@ -5,7 +5,7 @@ struct LoadCell: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .frame(height: 100)
+                .frame(height: 200)
                 .foregroundColor(.blue.opacity(0.1))
                 .cornerRadius(20)
                 .padding(.top, 3)

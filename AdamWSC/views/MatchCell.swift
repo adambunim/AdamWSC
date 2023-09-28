@@ -24,7 +24,7 @@ struct MatchCell: View {
                 ScoreView(score: lastPage?.awayScore)
             }
         }
-        .frame(height: 100)
+        .frame(height: 200)
         .environment(\.layoutDirection, .leftToRight)
         .padding()
         .background(.blue.opacity(0.1))
