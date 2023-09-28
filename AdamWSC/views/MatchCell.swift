@@ -9,20 +9,21 @@ struct MatchCell: View {
     var body: some View {
         let lastPage: Page? = match.wscGame?.primeStory?.pages.last
         HStack {
-            TeamScoreView(
-                logo: match.teams?.home?.logo,
-                name: match.wscGame?.homeTeamName,
-                score: lastPage?.homeScore)
+            VStack(alignment: .leading) {
+                TeamScoreView(
+                    logo: match.teams?.home?.logo,
+                    name: match.wscGame?.homeTeamName,
+                    score: lastPage?.homeScore)
+                TeamScoreView(
+                    logo: match.teams?.away?.logo,
+                    name: match.wscGame?.awayTeamName,
+                    score: lastPage?.awayScore)
+                Spacer()
+            }
             Spacer()
-            Text("-")
-            Spacer()
-            TeamScoreView(
-                logo: match.teams?.away?.logo,
-                name: match.wscGame?.awayTeamName,
-                score: lastPage?.awayScore)
         }
+        .environment(\.layoutDirection, .leftToRight)
         .padding()
-        .frame(maxWidth: .infinity, minHeight: 200)
         .background(.blue.opacity(0.1))
         .cornerRadius(20)
         .padding(.top, 3)
@@ -46,7 +47,7 @@ private struct TeamScoreView: View {
     let score: Int?
     
     var body: some View {
-        VStack {
+        HStack {
             if let logo {
                 AsyncImage(
                     url: URL(string: logo),
@@ -54,16 +55,19 @@ private struct TeamScoreView: View {
                         image
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 30, height: 30)
+                            .frame(maxWidth: 30, maxHeight: 30)
+                            .clipShape(Circle())
                     },
                     placeholder: {
-                        EmptyView()
-                    })
+                        Circle()
+                            .fill(Color.gray.opacity(0.3))
+                            .frame(width: 30, height: 30)
+                    }
+                )
             }
             Text(name ?? "?")
-                .font(.title2)
             Text("\(score ?? 0)")
-                .font(.headline)
         }
+        .font(.title2)
     }
 }
