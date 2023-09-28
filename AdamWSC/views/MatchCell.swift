@@ -8,36 +8,18 @@ struct MatchCell: View {
     
     var body: some View {
         let lastPage: Page? = match.wscGame?.primeStory?.pages.last
-        ZStack {
-            if let background = match.league?.logo {
-                AsyncImage(
-                    url: URL(string: background),
-                    content: { image in
-                        image
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 100, height: 100)
-                            .opacity(0.1)
-                    },
-                    placeholder: {
-                        EmptyView()
-                    }
-                )
-            }
-            
-            HStack {
-                TeamScoreView(
-                    logo: match.teams?.home?.logo,
-                    name: match.wscGame?.homeTeamName,
-                    score: lastPage?.homeScore)
-                Spacer()
-                Text("-")
-                Spacer()
-                TeamScoreView(
-                    logo: match.teams?.away?.logo,
-                    name: match.wscGame?.awayTeamName,
-                    score: lastPage?.awayScore)
-            }
+        HStack {
+            TeamScoreView(
+                logo: match.teams?.home?.logo,
+                name: match.wscGame?.homeTeamName,
+                score: lastPage?.homeScore)
+            Spacer()
+            Text("-")
+            Spacer()
+            TeamScoreView(
+                logo: match.teams?.away?.logo,
+                name: match.wscGame?.awayTeamName,
+                score: lastPage?.awayScore)
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: 200)
