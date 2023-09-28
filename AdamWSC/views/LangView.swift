@@ -3,15 +3,25 @@ import SwiftUI
 
 struct LangView: View {
     
-    @State var lang: String = "he"
+    @AppStorage("lang") var lang: String = "en"
     
     var body: some View {
-        Button(action: {
-            lang = "he"
-        }) {
-            Text("ע")
+        if lang == "en" {
+            Button(action: {
+                lang = "he"
+            }) {
+                Text("ע")
+            }
+            .buttonStyle(.plain)
         }
-        .buttonStyle(.plain)
+        else {
+            Button(action: {
+                lang = "en"
+            }) {
+                Text("A")
+            }
+            .buttonStyle(.plain)
+        }
     }
 }
 
