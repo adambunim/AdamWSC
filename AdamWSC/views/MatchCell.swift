@@ -14,14 +14,17 @@ struct MatchCell: View {
     var body: some View {
         let lastPage: Page? = match.wscGame?.primeStory?.pages.last
         
-        LazyVGrid(columns: columns, spacing: 20) {
-            TeamLogo(team: match.teams?.home)
-            TeamNameView(team: match.teams?.home)
-            ScoreView(score: lastPage?.homeScore)
-            TeamLogo(team: match.teams?.away)
-            TeamNameView(team: match.teams?.away)
-            ScoreView(score: lastPage?.awayScore)
+        HStack {
+            LazyVGrid(columns: columns, spacing: 20) {
+                TeamLogo(team: match.teams?.home)
+                TeamNameView(team: match.teams?.home)
+                ScoreView(score: lastPage?.homeScore)
+                TeamLogo(team: match.teams?.away)
+                TeamNameView(team: match.teams?.away)
+                ScoreView(score: lastPage?.awayScore)
+            }
         }
+        .frame(height: 100)
         .environment(\.layoutDirection, .leftToRight)
         .padding()
         .background(.blue.opacity(0.1))
@@ -43,25 +46,34 @@ struct MatchCell: View {
 private struct TeamLogo: View {
     
     let team: Team?
+    @State var opacity = 0.0
     
     var body: some View {
-        if let logo = team?.logo {
-            AsyncImage(
-                url: URL(string: logo),
-                content: { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: 30, maxHeight: 30)
-                        .clipShape(Circle())
-                },
-                placeholder: {
-                    Circle()
-                        .fill(Color.gray.opacity(0.3))
-                        .frame(width: 30, height: 30)
-                }
-            )
+        ZStack {
+            EmptyView()
+            
+            if let logo = team?.logo {
+                AsyncImage(
+                    url: URL(string: logo),
+                    content: { image in
+                        image
+                            .resizable()
+                            .scaledToFit()
+                            .clipShape(Circle())
+                            .opacity(opacity)
+                            .onAppear {
+                                withAnimation {
+                                    opacity = 1.0
+                                }
+                            }
+                    },
+                    placeholder: {
+                        EmptyView()
+                    }
+                )
+            }
         }
+        .frame(width: 30, height: 30)
     }
 }
 
