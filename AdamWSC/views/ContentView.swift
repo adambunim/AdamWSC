@@ -23,13 +23,7 @@ struct ContentView: View {
             case .failure:
                 Text(.failed_to_load)
             case .none:
-                ScrollView {
-                    LazyVStack {
-                        ForEach(0..<3) { _ in 
-                            LoadCell()
-                        }
-                    }
-                }
+                LoadingList()
             }
         }
         .onAppear {
