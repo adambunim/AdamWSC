@@ -7,7 +7,6 @@ struct MatchList: View {
     let matches: [Match]
     @State var firstPlayer: AVPlayer? = nil
     @State var selectedMatch: Match? = nil
-    @State var players: [String:AVPlayer] = [:]
     
     var body: some View {
         ScrollView {

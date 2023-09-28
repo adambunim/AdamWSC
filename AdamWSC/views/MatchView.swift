@@ -8,7 +8,7 @@ struct MatchView: View {
     let firstPlayer: AVPlayer?
     @State var players: [Int:AVPlayer] = [:]
     @State var selectedTab: Int = 0
-    let preload = 2
+    let preload = 1
     
     var body: some View {
         let homeName = match.wscGame?.homeTeamName ?? "?"
