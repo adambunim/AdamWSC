@@ -1,295 +1,230 @@
 {
-    "fixture": {
-        "timezone": "UTC",
-        "venue": {
-            "name": "Estadio de Mestalla",
-            "id": 1497,
-            "city": "Valencia"
+    "teams": {
+        "away": {
+            "logo": "https://media-3.api-sports.io/football/teams/47.png",
+            "id": 47,
+            "name": "Tottenham",
+            "winner": null
         },
-        "referee": "JesÃºs Gil",
-        "periods": {
-            "first": null,
-            "second": null
-        },
-        "id": 878120,
-        "status": {
-            "elapsed": null,
-            "long": "Not Started",
-            "short": "NS"
-        },
-        "date": "2023-01-23T20:00:00+00:00",
-        "timestamp": 1674504000
+        "home": {
+            "logo": "https://media-3.api-sports.io/football/teams/36.png",
+            "id": 36,
+            "winner": null,
+            "name": "Fulham"
+        }
     },
     "goals": {
         "home": null,
         "away": null
     },
-    "league": {
-        "logo": "https://media.api-sports.io/football/leagues/140.png",
-        "name": "La Liga",
-        "round": "Regular Season - 18",
-        "season": 2022,
-        "id": 140,
-        "country": "Spain",
-        "flag": "https://media-3.api-sports.io/flags/es.svg"
-    },
-    "wscGame": {
-        "gameTime": "2023-01-23T20:00:00",
-        "homeTeamName": "Valencia",
-        "gameId": "Valencia@Almeria-$2023-01-23",
-        "awayTeamName": "AlmerÃ­a",
-        "primeStory": {
-            "title": "Valencia vs. AlmerÃ­a",
-            "storyThumbnailSquare": "https://wsczoominwestus.azureedge.net/dynamicassets/5da81f57-6a92-4a94-b4ac-0c62e33c9706.jpg",
-            "publishDate": "2023-01-23T22:07:51.5631835Z",
-            "storyThumbnail": "https://editorsprodeus2.prod-cdn.clipro.tv/thumbnails/c27bfcad-5564-4b04-ba3f-2ae48a8f1c99_0.jpg",
-            "storyId": "DEA8FA24F2E821D7976E87BC99E36CE7D0DC7DC5",
-            "pages": [
-                {
-                    "duration": 0,
-                    "paggeId": "5FAFC8E02730836EC128931F1CE374171DA44900",
-                    "videoUrl": "https://wsczoominwestus.prod-cdn.clipro.tv/dynamicassets/dd468450-8868-4278-9c7a-acea02bfdae1.mp4",
-                    "title": null,
-                    "awayScore": null,
-                    "eventType": null,
-                    "gameClock": null,
-                    "homeScore": null,
-                    "rating": 0,
-                    "period": null,
-                    "actionType": null
-                },
-                {
-                    "awayScore": 0,
-                    "paggeId": "1CFAE47EB34BF02C56DF29F7E018068A43C28859",
-                    "title": "Kick Off by AlmerÃ­a ",
-                    "rating": 1,
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/b4d7e027-d08f-4954-ad04-a6d9987cf75e.mp4",
-                    "actionType": "KickOff",
-                    "homeScore": 0,
-                    "eventType": "PlayByPlay",
-                    "gameClock": "00:00",
-                    "period": "1",
-                    "duration": 16315
-                },
-                {
-                    "actionType": "Shot",
-                    "eventType": "PlayByPlay",
-                    "awayScore": 0,
-                    "paggeId": "D7B40C470F747B6FEF08E526284106ED493E9116",
-                    "duration": 13202,
-                    "rating": 3,
-                    "period": "1",
-                    "homeScore": 0,
-                    "title": "Shot by Edinson Cavani",
-                    "gameClock": "05:12",
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/5e8940c9-b8f7-4263-98bd-209d97e78c48.mp4"
-                },
-                {
-                    "duration": 12511,
-                    "gameClock": "28:52",
-                    "period": "1",
-                    "eventType": "PlayByPlay",
-                    "awayScore": 0,
-                    "paggeId": "0FE368E768641B6EB3BF54F5CD0444471FD433A8",
-                    "actionType": "Shot",
-                    "title": "Shot by Houboulang Mendes",
-                    "homeScore": 0,
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/d1147d09-bf11-4a4d-9c7d-9d86c0cec478.mp4",
-                    "rating": 2
-                },
-                {
-                    "homeScore": 0,
-                    "rating": 2,
-                    "actionType": "Shot",
-                    "eventType": "PlayByPlay",
-                    "gameClock": "43:50",
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/c388409b-51de-4766-b115-6818d952dfdc.mp4",
-                    "awayScore": 0,
-                    "duration": 21434,
-                    "period": "1",
-                    "title": "Shot by Largie Ramazani",
-                    "paggeId": "43DA2B4E46EEB3F27FBA5A4FA5276EDBE476A8AC"
-                },
-                {
-                    "gameClock": "47:32",
-                    "title": "Short Goal by Justin Kluivert",
-                    "eventType": "PlayByPlay",
-                    "awayScore": 0,
-                    "homeScore": 1,
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/8a086a71-9aea-491d-a298-a2a5d74b0572.mp4",
-                    "paggeId": "55123C2DD747E82C829F424C2530AE7827120400",
-                    "actionType": "ShortGoal",
-                    "period": "2",
-                    "duration": 10000,
-                    "rating": 3
-                },
-                {
-                    "awayScore": 0,
-                    "duration": 6855,
-                    "gameClock": "47:32",
-                    "rating": 2,
-                    "actionType": "Replay",
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/0fa5dea0-acb6-4713-ba14-af2535aff48b.mp4",
-                    "title": "Replay - Auto Detection",
-                    "eventType": "PlayByPlay",
-                    "period": "2",
-                    "paggeId": "9C5893FDE0B5631F0DCB7B0240A372F8A0E2BC55",
-                    "homeScore": 1
-                },
-                {
-                    "eventType": "PlayByPlay",
-                    "paggeId": "82B719B8FE9A9D5B1F58403905FB500041974512",
-                    "homeScore": 1,
-                    "awayScore": 1,
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/9e665a24-f66b-4b8f-824b-a06e07e5fdf6.mp4",
-                    "period": "2",
-                    "gameClock": "53:45",
-                    "rating": 3,
-                    "duration": 9609,
-                    "title": "Short Goal by Juan BrandÃ¡riz Movilla",
-                    "actionType": "ShortGoal"
-                },
-                {
-                    "paggeId": "8223F6906F4BB8D35666B339C6E7E50637501F70",
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/848afc55-70a0-4e12-9e42-2cd96d4a7752.mp4",
-                    "rating": 2,
-                    "actionType": "Replay",
-                    "gameClock": "53:45",
-                    "period": "2",
-                    "homeScore": 1,
-                    "eventType": "PlayByPlay",
-                    "awayScore": 1,
-                    "duration": 10555,
-                    "title": "Replay - Auto Detection"
-                },
-                {
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/d181f7b3-2c70-4fa0-8826-730ce3337a78.mp4",
-                    "eventType": "PlayByPlay",
-                    "actionType": "Shot",
-                    "homeScore": 1,
-                    "paggeId": "BD67E96490A456314476708D60AE223593158A5A",
-                    "title": "Shot by LÃ©o BaptistÃ£o",
-                    "gameClock": "60:08",
-                    "duration": 9484,
-                    "period": "2",
-                    "rating": 3,
-                    "awayScore": 1
-                },
-                {
-                    "rating": 2,
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/0879d442-32ad-4a8f-8bdc-769b9bae7887.mp4",
-                    "title": "Short Goal by JosÃ© GayÃ ",
-                    "duration": 8183,
-                    "eventType": "PlayByPlay",
-                    "awayScore": 1,
-                    "paggeId": "F8BAD2CC20F91D2C0848F742D549FE666A524437",
-                    "gameClock": "64:06",
-                    "period": "2",
-                    "actionType": "ShortGoal",
-                    "homeScore": 2
-                },
-                {
-                    "rating": 2,
-                    "actionType": "Replay",
-                    "duration": 6973,
-                    "eventType": "PlayByPlay",
-                    "homeScore": 1,
-                    "title": "Replay",
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/df3de289-f98d-4e32-9c95-a9ca859d5582.mp4",
-                    "period": "2",
-                    "gameClock": "64:05",
-                    "paggeId": "6A051DCEE2F87949F925F0F74E2D8F3D70EF9B50",
-                    "awayScore": 1
-                },
-                {
-                    "paggeId": "0BFCC6C83AAE52A2DCF6F591C3FEA6C71D07980A",
-                    "actionType": "ShortGoal",
-                    "period": "2",
-                    "title": "Short Goal by Francisco Portillo",
-                    "rating": 3,
-                    "eventType": "PlayByPlay",
-                    "duration": 10000,
-                    "awayScore": 2,
-                    "gameClock": "74:01",
-                    "homeScore": 2,
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/ae38b302-3c09-40e5-b364-87b81ecdb854.mp4"
-                },
-                {
-                    "duration": 7782,
-                    "title": "Replay - Auto Detection",
-                    "period": "2",
-                    "rating": 2,
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/699a3f26-7589-4fea-a42c-2826e2c3cd9e.mp4",
-                    "actionType": "Replay",
-                    "awayScore": 2,
-                    "homeScore": 2,
-                    "eventType": "PlayByPlay",
-                    "paggeId": "D5B009B51B217B015396EFB4C9F7649BD66EF304",
-                    "gameClock": "74:01"
-                },
-                {
-                    "paggeId": "EFF13C7B88C642F7DF95B885A7B88F575314C696",
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/ebf13f9b-963a-4fb3-8793-e3100416f59f.mp4",
-                    "period": "2",
-                    "homeScore": 2,
-                    "title": "Shot by Cenk Ã–zkaÃ§ar",
-                    "gameClock": "81:07",
-                    "awayScore": 2,
-                    "rating": 3,
-                    "duration": 14395,
-                    "actionType": "Shot",
-                    "eventType": "PlayByPlay"
-                },
-                {
-                    "homeScore": 2,
-                    "rating": 3,
-                    "gameClock": "95:44",
-                    "paggeId": "35ADF8EAA76E450F0E86AD63AE7B933ECADACEE2",
-                    "duration": 18520,
-                    "actionType": "Shot",
-                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/4c60c364-9cd1-4afc-9ddb-8e5df843a7ef.mp4",
-                    "title": "Shot by Samuel Castillejo Azuaga",
-                    "eventType": "PlayByPlay",
-                    "awayScore": 2,
-                    "period": "2"
-                }
-            ]
-        },
-        "name": "Valencia vs. AlmerÃ­a"
-    },
+    "storifyMeHandle": "A3B7E01D95A33266029D9DC6F55C9E9466A08205",
+    "storifyMeID": 55890,
     "score": {
+        "extratime": {
+            "home": null,
+            "away": null
+        },
         "penalty": {
+            "home": null,
+            "away": null
+        },
+        "halftime": {
             "home": null,
             "away": null
         },
         "fulltime": {
             "away": null,
             "home": null
-        },
-        "extratime": {
-            "home": null,
-            "away": null
-        },
-        "halftime": {
-            "away": null,
-            "home": null
         }
     },
-    "storifyMeHandle": "5FAFC8E02730836EC128931F1CE374171DA44900",
-    "storifyMeID": 55889,
-    "teams": {
-        "home": {
-            "logo": "https://media.api-sports.io/football/teams/532.png",
-            "winner": null,
-            "id": 532,
-            "name": "Valencia"
-        },
-        "away": {
-            "id": 723,
-            "winner": null,
-            "name": "Almeria",
-            "logo": "https://media-3.api-sports.io/football/teams/723.png"
-        }
+    "league": {
+        "name": "Premier League",
+        "season": 2022,
+        "id": 39,
+        "logo": "https://media.api-sports.io/football/leagues/39.png",
+        "round": "Regular Season - 21",
+        "flag": "https://media-3.api-sports.io/flags/gb.svg",
+        "country": "England"
     },
-    "WSCGameId": "Valencia@Almeria-$2023-01-23"
+    "wscGame": {
+        "name": "Fulham FC vs. Tottenham Hotspur",
+        "homeTeamName": "Fulham FC",
+        "gameId": "Fulham@Tottenham-$2023-01-23",
+        "gameTime": "2023-01-23T20:00:00",
+        "primeStory": {
+            "storyId": "A17836408761AE99F4D9AC496A23C40CF6615B4D",
+            "pages": [
+                {
+                    "duration": 0,
+                    "eventType": null,
+                    "paggeId": "A3B7E01D95A33266029D9DC6F55C9E9466A08205",
+                    "videoUrl": "https://wsczoominwestus.prod-cdn.clipro.tv/dynamicassets/57e0c7b0-36aa-448e-a352-e9bc2b187748.mp4",
+                    "period": null,
+                    "title": null,
+                    "awayScore": null,
+                    "actionType": null,
+                    "gameClock": null,
+                    "rating": 0,
+                    "homeScore": null
+                },
+                {
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/64637fd8-a9b5-41a9-9797-b378e608f4ac.mp4",
+                    "title": "Kick Off by Tottenham Hotspur ",
+                    "duration": 14481,
+                    "actionType": "KickOff",
+                    "paggeId": "F6C8874F82DED2BB84CC7B68E51536AA66A9B9FC",
+                    "period": "1",
+                    "rating": 1,
+                    "eventType": "PlayByPlay",
+                    "awayScore": 0,
+                    "gameClock": "00:00",
+                    "homeScore": 0
+                },
+                {
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/950c5675-7edd-43ba-943d-50adca39a56a.mp4",
+                    "duration": 14431,
+                    "awayScore": 0,
+                    "paggeId": "8E076180B2DF75750CA67846029F05E4FB6626B9",
+                    "gameClock": "09:32",
+                    "title": "Shot by Bobby Reid",
+                    "homeScore": 0,
+                    "eventType": "PlayByPlay",
+                    "actionType": "Shot",
+                    "period": "1",
+                    "rating": 3
+                },
+                {
+                    "awayScore": 0,
+                    "actionType": "Shot",
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/3fea9bbf-a292-403a-936f-3e7ed6e692e5.mp4",
+                    "eventType": "PlayByPlay",
+                    "paggeId": "44F5B81700736BA6C38DD0955BFECB5B63E80508",
+                    "duration": 18735,
+                    "period": "1",
+                    "gameClock": "19:01",
+                    "title": "Shot by Harrison Reed",
+                    "homeScore": 0,
+                    "rating": 3
+                },
+                {
+                    "rating": 3,
+                    "eventType": "PlayByPlay",
+                    "awayScore": 0,
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/554fffeb-9b34-48dc-90a8-e2c3c552a397.mp4",
+                    "title": "Shot by Aleksandar Mitrovic",
+                    "paggeId": "CA0022A70697BDC83CFBE0348C00721708D9190C",
+                    "gameClock": "24:55",
+                    "duration": 11578,
+                    "period": "1",
+                    "actionType": "Shot",
+                    "homeScore": 0
+                },
+                {
+                    "paggeId": "BB823076CC8555E6CBF1DBCA3D4C08059DA4381F",
+                    "period": "1",
+                    "eventType": "PlayByPlay",
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/8c32874b-7283-4b15-beb9-d7c1de03b0eb.mp4",
+                    "rating": 3,
+                    "awayScore": 0,
+                    "duration": 14581,
+                    "title": "Shot by Issa Diop",
+                    "actionType": "Shot",
+                    "gameClock": "41:38",
+                    "homeScore": 0
+                },
+                {
+                    "eventType": "PlayByPlay",
+                    "awayScore": 1,
+                    "gameClock": "46:01",
+                    "actionType": "ShortGoal",
+                    "title": "Short Goal by Harry Kane",
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/8ea97f07-e7fc-452a-a96c-2cfc2c7b1ad7.mp4",
+                    "duration": 9326,
+                    "homeScore": 0,
+                    "paggeId": "5827ADA7495E48C14CC07BBC6746384F3F44D1D5",
+                    "rating": 3,
+                    "period": "1"
+                },
+                {
+                    "title": "Replay - Auto Detection",
+                    "actionType": "Replay",
+                    "homeScore": 0,
+                    "gameClock": "46:01",
+                    "eventType": "PlayByPlay",
+                    "awayScore": 1,
+                    "period": "1",
+                    "paggeId": "2B1CC3F2E7AD257EC860F63E7616D3281BBFCD16",
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/1cdbea76-2be7-4a06-9bf5-ce87d4d88e60.mp4",
+                    "rating": 2,
+                    "duration": 8742
+                },
+                {
+                    "title": "Shot by Harry Kane",
+                    "gameClock": "57:11",
+                    "homeScore": 0,
+                    "paggeId": "D8D08E728A0A72D4F5D816736C4AE1553795D030",
+                    "rating": 3,
+                    "awayScore": 1,
+                    "actionType": "Shot",
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/c529a21d-80fa-442e-96a7-26ce3c6b6957.mp4",
+                    "eventType": "PlayByPlay",
+                    "duration": 14813,
+                    "period": "2"
+                },
+                {
+                    "paggeId": "FFDE0DAD22AFC42B925AC2C853E5F1D6E4C5A112",
+                    "actionType": "Shot",
+                    "period": "2",
+                    "eventType": "PlayByPlay",
+                    "awayScore": 1,
+                    "rating": 3,
+                    "duration": 14731,
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/cb8478a4-4862-4fc2-91ca-213485a77e78.mp4",
+                    "gameClock": "74:47",
+                    "title": "Shot by Aleksandar Mitrovic",
+                    "homeScore": 0
+                },
+                {
+                    "rating": 3,
+                    "homeScore": 0,
+                    "title": "Shot by Manor Solomon",
+                    "period": "2",
+                    "actionType": "Shot",
+                    "gameClock": "88:21",
+                    "videoUrl": "https://editorsprodeus2.prod-cdn.clipro.tv/editor/772f88fb-3e09-4901-be66-1bd3f2c2cb57.mp4",
+                    "eventType": "PlayByPlay",
+                    "awayScore": 1,
+                    "duration": 9860,
+                    "paggeId": "4AAB2D1D4B88A7124D8D713DB3855511C961E553"
+                }
+            ],
+            "publishDate": "2023-01-23T22:19:26.7146598Z",
+            "storyThumbnail": "https://editorsprodeus2.prod-cdn.clipro.tv/thumbnails/bade7ca2-d8b4-4303-ad0a-41807b88d366_0.jpg",
+            "title": "Fulham FC vs. Tottenham Hotspur",
+            "storyThumbnailSquare": "https://wsczoominwestus.azureedge.net/dynamicassets/326e8609-4d3c-4b4f-8205-87a16dc59651.jpg"
+        },
+        "awayTeamName": "Tottenham Hotspur"
+    },
+    "WSCGameId": "Fulham@Tottenham-$2023-01-23",
+    "fixture": {
+        "referee": "P. Tierney",
+        "venue": {
+            "name": "Craven Cottage",
+            "id": 535,
+            "city": "London"
+        },
+        "timezone": "UTC",
+        "timestamp": 1674504000,
+        "date": "2023-01-23T20:00:00+00:00",
+        "id": 868149,
+        "status": {
+            "short": "NS",
+            "long": "Not Started",
+            "elapsed": null
+        },
+        "periods": {
+            "first": null,
+            "second": null
+        }
+    }
 }
