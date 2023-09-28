@@ -11,6 +11,7 @@ struct LangView: View {
                 lang = "he"
             }) {
                 Text("A")
+                    .accessibilityLabel("English")
             }
             .buttonStyle(.plain)
         }
@@ -19,6 +20,7 @@ struct LangView: View {
                 lang = "en"
             }) {
                 Text("ע")
+                    .accessibilityLabel("עברית")
             }
             .buttonStyle(.plain)
         }
