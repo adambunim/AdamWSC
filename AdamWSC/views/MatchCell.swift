@@ -54,7 +54,7 @@ private struct TeamLogo: View {
                 .frame(width: 30, height: 30)
             
             if let logo = team?.logo {
-                CachedAsyncImage(
+                AsyncImage(
                     url: URL(string: logo),
                     content: { image in
                         image
