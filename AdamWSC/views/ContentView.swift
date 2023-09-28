@@ -8,11 +8,18 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            HStack {
-                Spacer()
-                Text(.games)
-                    .font(.headline)
-                Spacer()
+            ZStack {
+                HStack {
+                    Spacer()
+                    Text(.games)
+                        .font(.headline)
+                    Spacer()
+                }
+                
+                HStack {
+                    LangView()
+                    Spacer()
+                }
             }
             .padding()
             .background(.gray.opacity(0.2))
