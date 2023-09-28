@@ -168,12 +168,12 @@
 			isa = PBXGroup;
 			children = (
 				51D5E8F82AC3527A00CFE7CB /* ContentView.swift */,
-				51D5E9252AC35B2900CFE7CB /* MatchCell.swift */,
+				515B9D502AC4485500FAE8C3 /* MatchList.swift */,
 				51D5E93B2AC4001300CFE7CB /* LoadCell.swift */,
 				51D5E9432AC4193E00CFE7CB /* MatchCellButton.swift */,
+				51D5E9252AC35B2900CFE7CB /* MatchCell.swift */,
 				515B9D4A2AC41CD800FAE8C3 /* MatchView.swift */,
 				515B9D4E2AC420BA00FAE8C3 /* PageView.swift */,
-				515B9D502AC4485500FAE8C3 /* MatchList.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -182,10 +182,10 @@
 			isa = PBXGroup;
 			children = (
 				51D5E9202AC3534800CFE7CB /* matches.json */,
-				51D5E9282AC35C7000CFE7CB /* MatchesLoader.swift */,
-				51D5E9222AC3538D00CFE7CB /* Matches.swift */,
 				51D5E9412AC40A5800CFE7CB /* example.json */,
+				51D5E9282AC35C7000CFE7CB /* MatchesLoader.swift */,
 				515B9D4C2AC41D2C00FAE8C3 /* ExampleLoader.swift */,
+				51D5E9222AC3538D00CFE7CB /* Matches.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
