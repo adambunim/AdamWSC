@@ -32,6 +32,7 @@
 		51D5E9442AC4193E00CFE7CB /* MatchCellButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9432AC4193E00CFE7CB /* MatchCellButton.swift */; };
 		51DAC2932AC55BEC0073E212 /* LangView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DAC2922AC55BEC0073E212 /* LangView.swift */; };
 		51DAC2952AC5602F0073E212 /* MyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DAC2942AC5602F0073E212 /* MyText.swift */; };
+		51DAC2962AC562420073E212 /* MatchesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5E9282AC35C7000CFE7CB /* MatchesLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -364,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51DAC2962AC562420073E212 /* MatchesLoader.swift in Sources */,
 				51D5E9082AC3527B00CFE7CB /* AdamWSCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
