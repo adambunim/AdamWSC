@@ -5,7 +5,6 @@ import AVKit
 struct MatchView: View {
     
     let match: Match
-    let firstPlayer: AVPlayer?
     @State var players: [Int:AVPlayer] = [:]
     @State var selectedTab: Int = 0
     let preload = 1
@@ -40,7 +39,6 @@ struct MatchView: View {
                         loadVideos(pages)
                     }
                     .onAppear {
-                        players[0] = firstPlayer
                         loadVideos(pages)
                     }
                 }

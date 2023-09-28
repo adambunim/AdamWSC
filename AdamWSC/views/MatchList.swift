@@ -5,7 +5,6 @@ import AVKit
 struct MatchList: View {
     
     let matches: [Match]
-    @State var firstPlayer: AVPlayer? = nil
     @State var selectedMatch: Match? = nil
     
     var body: some View {
@@ -13,13 +12,12 @@ struct MatchList: View {
             LazyVStack {
                 ForEach(0..<matches.count, id:\.self) { i in
                     let iter = matches[i]
-                    MatchCellButton(match: iter) { player in
-                        firstPlayer = player
+                    MatchCellButton(match: iter) {
                         selectedMatch = iter
                     }
                 }
                 .sheet(item: $selectedMatch) { match in
-                    MatchView(match: match, firstPlayer: firstPlayer)
+                    MatchView(match: match)
                 }
             }
         }
