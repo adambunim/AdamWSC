@@ -51,9 +51,10 @@ private struct TeamLogo: View {
     var body: some View {
         ZStack {
             EmptyView()
+                .frame(width: 30, height: 30)
             
             if let logo = team?.logo {
-                AsyncImage(
+                CachedAsyncImage(
                     url: URL(string: logo),
                     content: { image in
                         image
@@ -71,6 +72,11 @@ private struct TeamLogo: View {
                         EmptyView()
                     }
                 )
+            }
+            else {
+                Circle()
+                    .foregroundColor(.gray.opacity(0.1))
+                    .frame(width: 30, height: 30)
             }
         }
         .frame(width: 30, height: 30)
