@@ -5,13 +5,14 @@ import SwiftUI
 struct ContentView: View {
     
     @State var result: Result<[Match],WSCError>? = nil
+    @AppStorage("lang") var lang: String = "en"
 
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
                 HStack {
                     Spacer()
-                    Text(.games)
+                    MyText(.games)
                         .font(.headline)
                     Spacer()
                 }
@@ -28,7 +29,7 @@ struct ContentView: View {
             case .success(let matches):
                 MatchList(matches: matches)
             case .failure:
-                Text(.failed_to_load)
+                MyText(.failed_to_load)
             case .none:
                 LoadingList()
             }

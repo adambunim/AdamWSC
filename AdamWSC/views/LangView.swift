@@ -10,7 +10,7 @@ struct LangView: View {
             Button(action: {
                 lang = "he"
             }) {
-                Text("ע")
+                Text("A")
             }
             .buttonStyle(.plain)
         }
@@ -18,7 +18,7 @@ struct LangView: View {
             Button(action: {
                 lang = "en"
             }) {
-                Text("A")
+                Text("ע")
             }
             .buttonStyle(.plain)
         }

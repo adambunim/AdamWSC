@@ -48,7 +48,7 @@ struct MatchView: View {
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
             }
             else {
-                Text(.nothing_to_show)
+                MyText(.nothing_to_show)
             }
             
             Spacer()
