@@ -61,6 +61,7 @@ private struct TeamLogo: View {
                             .resizable()
                             .scaledToFit()
                             .clipShape(Circle())
+                            .offset(x: (1 - opacity) * -10)
                             .opacity(opacity)
                             .onAppear {
                                 withAnimation {
