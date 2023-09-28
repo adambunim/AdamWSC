@@ -5,7 +5,7 @@ struct LoadingList: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(0..<3) { _ in
+                ForEach(0..<10) { _ in
                     LoadCell()
                 }
             }
